@@ -1,20 +1,22 @@
-#!/usr/bin/env bash
+• #!/usr/bin/env bash
 
-# Compare two numbers.
-# Rule: use (( ... )) for numeric comparisons in Bash.
+  # Compare two numbers.
+  # Rule: use (( ... )) for numeric comparisons in Bash.
 
-a=4
-b=6
-sum=$((a + b))
+  read -r -p "Enter first number: " a
+  read -r -p "Enter second number: " b
 
-echo "a = $a"
-echo "b = $b"
-echo "sum = $sum"
+  sum=$((a + b))
 
-if (( a > b )); then
-    echo "$a is greater"
-elif (( b > a )); then
-    echo "$b is greater"
-else
-    echo "Both are equal"
-fi
+  echo "a = $a"
+  echo "b = $b"
+  echo "sum = $sum"
+
+  if (( a > b )); then
+      echo "$a is greater"
+  elif (( b > a )); then
+      echo "$b is greater"
+  else
+      echo "Both are equal"
+  fi
+
